@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Validador de CPF</title>
+</head>
+
+<body>
+    <div class="card" id="card">
+        <div class="card-body">
+            <h2 class="card-title">Validador de CPF</h2>
+            <p class="card-text">
+            <div class="input">
+                <input type="text" class="form" placeholder="Digite o CPF" id="cpf" oninput="mascaraCPF(this)"
+                    maxlength="14">
+            </div>
+            <p class="card-text">
+                <span id="result">
+                    &nbsp;
+                </span>
+            </p>
+            <button type="submit" class="btn-validate" onclick="pegaCPF()">
+                Validar
+            </button>
+            </p>
+        </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>
